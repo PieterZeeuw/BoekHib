@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18-sep-2014 11:22:57 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="nl.zeeuw.model.Boek" table="BOEK">
+        <id name="isbn" type="long">
+            <column name="ISBN" />
+        </id>
+        <property name="auteur" type="java.lang.String">
+            <column name="AUTEUR" />
+        </property>
+        <property name="titel" type="java.lang.String">
+            <column name="TITEL" />
+        </property>
+        <property name="prijs" type="double">
+            <column name="PRIJS" />
+        </property>
+    </class>
+</hibernate-mapping>
